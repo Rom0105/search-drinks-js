@@ -1,7 +1,45 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+body {
+  background-color: #230312;
+}
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+.div-form {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+.btn {
+  margin-left: 10px;
+
+  width: 140px;
+
+  background-color: rgb(44, 128, 255);
+  color: #fff;
+
+  border-radius: 5px;
+}
+
+.input-form {
+  width: 400px;
+  height: 50px;
+
+  font-size: 30px;
+
+  border-radius: 5px;
+  border-color: rgb(44, 128, 255);
+}
+
+.div-image {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+.div-coctail {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 100px;
+}
