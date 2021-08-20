@@ -13,11 +13,16 @@ body {
   margin-left: 10px;
 
   width: 140px;
+  height: 50px;
 
   background-color: rgb(44, 128, 255);
   color: #fff;
 
   border-radius: 5px;
+}
+
+.form-container {
+  display: flex;
 }
 
 .input-form {
@@ -42,4 +47,43 @@ body {
   justify-content: center;
 
   margin-top: 100px;
+}
+
+.pnotify-text-with-max-height {
+  overflow-y: unset;
+}
+
+.pnotify-container {
+  width: 300px !important;
+  height: 60px !important;
+}
+
+.pnotify-pre-line {
+  font-size: 20px;
+}
+
+.text {
+  color: #fff;
+
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  border-radius: 10px;
+}
+
+.js-container {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+
+  justify-content: center;
+
+  margin-top: 50px;
 }

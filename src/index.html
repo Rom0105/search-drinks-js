@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>search coctail</title>
+    <link href="../node_modules/@pnotify/core/dist/PNotify.css" rel="stylesheet" type="text/css" />
+    <link
+      href="../node_modules/@pnotify/mobile/dist/PNotifyMobile.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../node_modules/@pnotify/core/dist/BrightTheme.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -22,11 +33,12 @@
       <img src="./images/separator.jpg" alt="line" class="image" width="1000" height="3" />
     </div>
     <div class="div-form">
-      <form action="">
+      <form id="form" class="form-container">
         <input type="text" placeholder="search for coctail..." class="input-form" />
+        <button class="btn">Search</button>
       </form>
-      <button class="btn">Search</button>
     </div>
+    <div class="js-container"></div>
     <script src="./index.js"></script>
   </body>
 </html>
