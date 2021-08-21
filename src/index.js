@@ -21,10 +21,9 @@ function handlerSubmit(e) {
   clearMarkup();
   clear();
 
-  errorCocktail();
   fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${value}`)
     .then(response => response.json())
-    .then(cocktails => markup(cocktails.drinks))
+    .then(cocktails => errorCocktail(cocktails))
     .catch(err => console.log(err));
 }
 
@@ -50,12 +49,13 @@ function clearBtn() {
   return;
 }
 
-function errorCocktail() {
-  if ({ drinks: null }) {
+function errorCocktail(cocktails) {
+  if (cocktails.drinks) {
+    markup(cocktails.drinks);
+  } else {
     error({
       text: 'Сocktail not found!',
       delay: 2000,
     });
-    return;
   }
 }
